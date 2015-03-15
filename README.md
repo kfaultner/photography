@@ -1,4 +1,5 @@
 ---
+layout: page
 ### Memories Forever Cherished Photography
 ---
 <img src="/images/IMG_6865a.jpg" width="250px" height="200px")>
