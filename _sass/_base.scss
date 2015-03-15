@@ -40,9 +40,17 @@ ul, ol, dl, figure,
 /**
  * Images
  */
+
 img {
+    float: left;
+    margin-right: 20px;
     max-width: 100%;
     vertical-align: middle;
+    &.right {
+        float: right;
+        margin-right: 0;
+        margin-left: 20px;
+    }
 }
 
 
