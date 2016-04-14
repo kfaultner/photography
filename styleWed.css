@@ -1,0 +1,106 @@
+body{
+    background-color: #E3CEF6;
+    width: 100%;
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url(fonts/Lobster_1.3.otf);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Lobster";
+    font-size: 28pt;
+    text-shadow: 2px 2px 2px #0A0A0A;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #2F2736;
+    text-decoration: none;
+    font-size: 18pt;
+    margin: 5px;
+    text-shadow: 1px 1px 2px #0A0A0A;
+    position: relative;
+
+}
+
+.pics {
+    margin-left: 200px;
+}
+
+img {
+    width: 23%;
+    margin: 1%;
+    vertical-align: middle;
+    transition: all 1s, transform .5s, box-shadow .5s;
+}
+
+img:hover {
+    box-shadow: 6px 6px 20px rgba(0,0,0,.6);
+    border:1px solid #2F2736;
+}
+
+img:focus {
+    width: 37%;
+    transform: scale(1.02);
+    box-shadow: 12px 12px 25px rgba(0,0,0,.6);
+    /*width: 47%;*/
+}
+
+@media screen and (max-width: 940px){
+
+    .pics {
+        margin-left: 100px;
+    }
+
+    img {
+        width: 37%;
+        margin: 5px 10px;
+    }
+
+    img:focus {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .pics {
+        margin-left: 10px;
+    }
+
+    img {
+        width: 65%;
+    }
+
+    img:focus {
+        width: 100%;
+        margin: 20px 10px;
+    }
+}
+
+/*#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}*/

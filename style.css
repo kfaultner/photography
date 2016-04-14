@@ -1,43 +1,71 @@
-div.img {
-    margin: 5px;
+body {
+    
+    background-color: #E3CEF6;
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url(fonts/Lobster_1.3.otf);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: "Lobster";
+    font-size: 28pt;
+    text-shadow: 2px 2px 2px #0A0A0A;
+}
+
+nav {
+    text-align: center;
+    background-color: #2F2736;
     padding: 5px;
-    border: 1px solid #0000ff;
-    height: auto;
-    width: auto;
-    float: left;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18pt;
+    margin: 3px;
+    margin-right: 50px;
+    text-shadow: 2px 2px 2px #0A0A0A;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+img {
+    width: 30%;
+    margin: 5px 10px;
+}
+
+.pics {
+    margin: 70px 10px;
+    padding: 10px;
     text-align: center;
+    background-color: #E3CEF6;
 }
 
-div.img img {
-    display: inline;
-    margin: 5px;
-    border: 1px solid #ffffff;
+@media screen and (max-width: 940px){
+
+    img {
+        width: 37%;
+        margin: 5px 10px;
+    }
+
+    img:focus {
+        width: 50%;
+        margin: 0;
+    }
 }
 
-div.img a:hover img {
-    border:1px solid #0000ff;
-}
+@media screen and (max-width: 600px){
 
-div.desc {
-    text-align: center;
-    font-weight: normal;
-    width: 120px;
-    margin: 5px;
-}
+    img {
+        width: 65%;
+    }
 
-#slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 240px; 
-    height: 240px; 
-    padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
-}
-
-#slideshow > div { 
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
+    img:focus {
+        width: 100%;
+        margin: 20px 0;
+    }
 }

@@ -1,40 +1,53 @@
-<link rel="stylesheet" href="style.css">
-<div id="slideshow">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memories</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="plusgallery/css/plusgallery.css">
+  <!-- <link rel="stylesheet" href="/lightbox2/css/lightbox.css"> -->
+</head>
+<body>
 
-  <h1 class="page-heading">Memories Forever Cherished Photography</h1>
+  <div id="slideshow">
 
-  <div class="img">
-    <a target="_blank" href="klematis_big.htm">
-      <img src="images/IMG_6865a.jpg" alt="Clemmons" width="110" height="90">
-    </a>
+    <h1 class="page-heading">Memories Forever Cherished Photography</h1>
+    <nav>
+      <a href="wedding.html">Wedding</a>
+      <a href="family.html">Families</a>
+      <a href="maternity.html">Maternity</a>
+      <a href="baby.html">Baby</a>
+      <a href="grad.html">Graduation</a>
+      <a href="events.html">Events</a>
+      <!-- <a href="portrait.html">Portraits</a> -->
+    </nav>
+
   </div>
-  <div class="img">
-    <a target="_blank" href="klematis2_big.htm">
-      <img src="images/IMG_6786 copy.jpg" alt="Clemmons" width="110" height="90">
-    </a>
-  </div>
-  <div class="img">
-    <a target="_blank" href="klematis3_big.htm">
-      <img src="images/IMG_6865a.jpg" alt="Clemmons" width="110" height="90">
-    </a>
-  </div>
-  <div class="img">
-    <a target="_blank" href="klematis4_big.htm">
-      <img src="images/IMG_6865a.jpg" alt="Clemmons" width="110" height="90">
-    </a>
-  </div>
-  <!-- <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul> 
+  <div class="pics"> 
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+    <img tabindex="1" src="plusgallery/images/nonResizedPics/IMG_6782.jpg" alt="Clemmons">
+    <img tabindex="2" src="plusgallery/images/nonResizedPics/IMG_0740e.jpg" alt="Tina">
+    <img tabindex="3" src="plusgallery/images/nonResizedPics/IMG_3227e.jpg" alt="Nikki">
+    <!-- <img tabindex="4" src="plusgallery/images/nonResizedPics/IMG_2733.jpg" alt="TADD"> -->
+  
+  </div>
 
-</div>
+  <div id="plusgallery"
+    data-type="google"
+    data-userid="kfaultner">
+      <!-- +Gallery http://www.plusgallery.net/ -->
+  </div>
+
+  <nav>
+    <a href="about.html">About</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/lightbox.min.js"></script> -->
+</body>
+</html>
+
